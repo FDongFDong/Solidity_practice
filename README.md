@@ -1,11 +1,11 @@
 # solidity_practice
-[Compile](#Compile)
-[값 변경](#값-변경)
-[자료형](#Value-자료형)
-[Operation](#Operation)
-[Function](#Function)
-[Visibility](#Visibility)
-[Version 차이](#Version)
+- [Compile](#Compile)
+- [값 변경](#값-변경)
+- [자료형](#Value-자료형)
+- [Operation](#Operation)
+- [Function](#Function)
+- [Visibility](#Visibility)
+- [Version 차이](#Version)
 
 1. Contract 파일 작성
 2. (컴파일) -> Output: EVM 바이트코드, ABI
