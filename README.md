@@ -1,4 +1,11 @@
 # solidity_practice
+[Compile](#Compile)
+[값 변경](#값-변경)
+[자료형](#Value-자료형)
+[Operation](#Operation)
+[Function](#Function)
+[Visibility](#Visibility)
+[Version 차이](#Version)
 
 1. Contract 파일 작성
 2. (컴파일) -> Output: EVM 바이트코드, ABI
@@ -22,9 +29,10 @@ SmartContract
 
 ---
 
-## Solidity
+## 값 변경
 
-()[First]
+[First](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
+
 값을 변경하려면 함수를 사용하여 값을 변경해야한다.
 
 ---
@@ -32,8 +40,9 @@ SmartContract
 ## Value 자료형
 
 ()[Data]
-자료형에도 int8, int32, int256 등 값이 다양하다.
+- 자료형에도 int8, int32, int256 등 값이 다양하다.
 가스비를 효율적으로 사용하기 위함
+- float형이 없다.
 
 ---
 
