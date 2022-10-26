@@ -6,6 +6,7 @@
 - [Function](#Function)
 - [Visibility](#Visibility)
 - [Version 차이](#Version)
+___
 
 1. Contract 파일 작성
 2. (컴파일) -> Output: EVM 바이트코드, ABI
@@ -31,7 +32,7 @@ SmartContract
 
 ## 값 변경
 
-[First](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
+[First.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
 
 값을 변경하려면 함수를 사용하여 값을 변경해야한다.
 
@@ -39,7 +40,8 @@ SmartContract
 
 ## Value 자료형
 
-()[Data]
+[Data.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Data.sol)
+
 - 자료형에도 int8, int32, int256 등 값이 다양하다.
 가스비를 효율적으로 사용하기 위함
 - float형이 없다.
@@ -48,13 +50,13 @@ SmartContract
 
 ## Operation
 
-()[Operation]
+[Operation.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Operation.sol)
 
 ---
 
 ## Function
 
-()[Function]
+[Function.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
 - state 값을 변경 시키는 경우
   - 트랜잭션을 발생시켜 가스비를 소모한다.
@@ -67,17 +69,18 @@ SmartContract
 
 ## Visibility
 
-()[FunctionVisiblilty]
+[FunctionVisiblilty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
 - private : 외부 공개 x, 상속된 컨트랙트 x, 내부에서 o
 - internal : 외부 공개 x, 상속된 컨트랙트 o, 내부에서 o
 - public : 외부 공개 o, 상속된 컨트랙트 o, 내부에서 o
 - external : 외부 공개 o, 상속된 컨트랙트 x, 내부에서 x
-
+___
 ## Version
 
-()[Version4]
-()[Version8]
+[Version4](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
+[Version8](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
+
 Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 - Version4에서는 2^8 - 1에 +1을 더하면 0이 된다.
