@@ -14,6 +14,7 @@
   - [Mapping](#mapping)
   - [Variable Range](#variable-range)
   - [Address](#address)
+  - [This](#this)
 
 ---
 
@@ -145,3 +146,10 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 - 체크섬이 완료되서 대소문자가 규칙성에 맞게 정상적으로 반영된 것만 사용할 수 있다.
 - 이더리움을 주고 받는 주소나 EOA같은 경우에는 payable을 명시해줘야지만 전송이 가능하다.
+
+---
+
+## This
+
+[This.sol]()
+this 키워드는 자기 자신 컨트랙트를 지칭한다.
