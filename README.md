@@ -26,6 +26,10 @@
   - [Try-Catch](#try-catch)
   - [CustomError](#customerror)
   - [Fallback, Receive](#fallback-receive)
+  - [상속](#상속)
+  - [Override](#override)
+  - [Super](#super)
+  - [다중 상속](#다중-상속)
 
 ---
 
@@ -213,11 +217,15 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 - 중복으로 사용되는 조건을 체크할 수 있다.
 
+---
+
 ## Require
 
 [Require.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Require.sol)
 
 - Error 구문을 출력할 수 있다.
+
+---
 
 ## Assert
 
@@ -226,6 +234,8 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 - Require문과 달리 단순히 조건만 체크할 때 사용한다. Error 구문을 출력하지 못함.
 - 조건이 성립하지 않을 때는 스마트 컨트랙트에서 Error을 발생시키고 트랜잭션으로 인해 변경된 state를 rollback시키고 사용자가 제공한 gas price를 되돌려준다.
 
+---
+
 ## Revert
 
 [Revert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Revert.sol)
@@ -233,17 +243,23 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 - 무조건 Error를 발생시키고 State를 Rollback한다.
 - Error 구문을 출력할 수 있다.
 
+---
+
 ## Try-Catch
 
 [TryCatch.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TryCatch.sol)
 
 - 일반적으로 사용할 수 없으며 다른 함수를 호출했을 경우에만 사용할 수 있다.
 
+---
+
 ## CustomError
 
 [CustomError.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
 
 - 중복적인 Error을 처리할 때 사용
+
+---
 
 ## Fallback, Receive
 
@@ -254,3 +270,25 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 - 예시
   - 사용자가 ERC20 토큰을 보내야 하지만 실수로 ETH를 보냈을때 컨트랙트에서 못빼낼 수 있다. 이때 예방차원에서 사용하는 함수
   - Proxy Contract 사용
+
+---
+
+## 상속
+
+[Inherit.sol]()
+
+## Override
+
+[Overriding.sol]()
+
+- 같은 이름의 함수를 오버라이드 하기 위해선 부모 컨트랙트에 있는 함수에 virtual 키워드를 자식 컨트랙트에 있는 함수에는 override 키워드를 넣어준다.
+
+## Super
+
+[Super.sol]()
+
+- Super 키워드를 사용하면 부모 컨트랙트에 접근할 수 있다.
+
+## 다중 상속
+
+[MultiInheritance.sol]()
