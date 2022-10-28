@@ -151,5 +151,5 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ## This
 
-[This.sol]()
+[This.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/This.sol)
 this 키워드는 자기 자신 컨트랙트를 지칭한다.
