@@ -275,20 +275,20 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ## 상속
 
-[Inherit.sol]()
+[Inherit.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Inherit.sol)
 
 ## Override
 
-[Overriding.sol]()
+[Overriding.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Overriding.sol)
 
 - 같은 이름의 함수를 오버라이드 하기 위해선 부모 컨트랙트에 있는 함수에 virtual 키워드를 자식 컨트랙트에 있는 함수에는 override 키워드를 넣어준다.
-
+___
 ## Super
 
-[Super.sol]()
+[Super.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Super.sol)
 
 - Super 키워드를 사용하면 부모 컨트랙트에 접근할 수 있다.
-
+___
 ## 다중 상속
 
-[MultiInheritance.sol]()
+[MultiInheritance.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/MultiInheritance.sol)
