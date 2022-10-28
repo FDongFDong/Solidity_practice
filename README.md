@@ -241,7 +241,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ## CustomError
 
-[CustomError](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
+[CustomError.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
 
 - 중복적인 Error을 처리할 때 사용
 
