@@ -175,3 +175,10 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 - For
 - While
 - Do While
+
+___
+## Block Property
+[BlockProperty]()
+
+### goerli Test Net
+![image](https://user-images.githubusercontent.com/20445415/198577384-03db8955-0ea9-469a-920e-3841e45e627e.png)
