@@ -17,6 +17,16 @@
   - [This](#this)
   - [If Else](#if-else)
   - [Loop](#loop)
+  - [Block Property](#block-property)
+    - [goerli Test Net](#goerli-test-net)
+  - [Transaction Property](#transaction-property)
+  - [Modifier](#modifier)
+  - [Require](#require)
+  - [Assert](#assert)
+  - [Revert](#revert)
+  - [Try-Catch](#try-catch)
+  - [CustomError](#customerror)
+  - [Fallback, Receive](#fallback-receive)
 
 ---
 
@@ -176,9 +186,72 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 - While
 - Do While
 
-___
+---
+
 ## Block Property
-[BlockProperty]()
+
+[BlockProperty.sol]()
+[BlockProperty2.sol]()
+
+---
 
 ### goerli Test Net
+
 ![image](https://user-images.githubusercontent.com/20445415/198577384-03db8955-0ea9-469a-920e-3841e45e627e.png)
+
+---
+
+## Transaction Property
+
+[TransactionProperty.sol]()
+[TransactionProperty2.sol]()
+
+---
+
+## Modifier
+
+[Modifier.sol]()
+
+- 중복으로 사용되는 조건을 체크할 수 있다.
+
+## Require
+
+[Require.sol]()
+
+- Error 구문을 출력할 수 있다.
+
+## Assert
+
+[Assert.sol]()
+
+- Require문과 달리 단순히 조건만 체크할 때 사용한다. Error 구문을 출력하지 못함.
+- 조건이 성립하지 않을 때는 스마트 컨트랙트에서 Error을 발생시키고 트랜잭션으로 인해 변경된 state를 rollback시키고 사용자가 제공한 gas price를 되돌려준다.
+
+## Revert
+
+[Revert.sol]()
+
+- 무조건 Error를 발생시키고 State를 Rollback한다.
+- Error 구문을 출력할 수 있다.
+
+## Try-Catch
+
+[TryCatch.sol]
+
+- 일반적으로 사용할 수 없으며 다른 함수를 호출했을 경우에만 사용할 수 있다.
+
+## CustomError
+
+[CustomError]()
+
+- 중복적인 Error을 처리할 때 사용
+
+## Fallback, Receive
+
+[Fallback.sol]()
+
+- 사용자가 존재하지 않는 함수를 호출 할 때
+- msg.data가 비어있지 않는 경우
+- 예시
+  - 사용자가 ERC20 토큰을 보내야 하지만 실수로 ETH를 보냈을때 컨트랙트에서 못빼낼 수 있다. 이때 예방차원에서 사용하는 함수
+  - Proxy Contract 사용
