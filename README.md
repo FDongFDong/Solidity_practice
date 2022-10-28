@@ -1,12 +1,21 @@
 # solidity_practice
-- [Compile](#Compile)
-- [값 변경](#값-변경)
-- [자료형](#Value-자료형)
-- [Operation](#Operation)
-- [Function](#Function)
-- [Visibility](#Visibility)
-- [Version 차이](#Version)
-___
+
+- [solidity_practice](#solidity_practice)
+  - [Compile](#compile)
+  - [값 변경](#값-변경)
+  - [Value 자료형](#value-자료형)
+  - [Operation](#operation)
+  - [Function](#function)
+  - [Visibility](#visibility)
+  - [Version](#version)
+  - [Struct](#struct)
+  - [Enum](#enum)
+  - [Array](#array)
+  - [Mapping](#mapping)
+  - [Variable Range](#variable-range)
+  - [Address](#address)
+
+---
 
 1. Contract 파일 작성
 2. (컴파일) -> Output: EVM 바이트코드, ABI
@@ -43,7 +52,7 @@ SmartContract
 [Data.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Data.sol)
 
 - 자료형에도 int8, int32, int256 등 값이 다양하다.
-가스비를 효율적으로 사용하기 위함
+  가스비를 효율적으로 사용하기 위함
 - float형이 없다.
 
 ---
@@ -75,13 +84,64 @@ SmartContract
 - internal : 외부 공개 x, 상속된 컨트랙트 o, 내부에서 o
 - public : 외부 공개 o, 상속된 컨트랙트 o, 내부에서 o
 - external : 외부 공개 o, 상속된 컨트랙트 x, 내부에서 x
-___
+
+---
+
 ## Version
 
-[Version4](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
-[Version8](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
+[Version4.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
+[Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
 
 Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 - Version4에서는 2^8 - 1에 +1을 더하면 0이 된다.
 - Version8에서는 에러를 일으킨다.
+
+---
+
+## Struct
+
+[Struct.sol]()
+사용자 자료형을 다루기 위해 사용
+
+---
+
+## Enum
+
+[Enum.sol]()
+주로 상태값을 처리하기 위해 사용
+
+---
+
+## Array
+
+[Array.sol]()
+
+delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
+
+---
+
+## Mapping
+
+[Mapping.sol]()
+
+- key값은 중복되지 않는다.
+  - 동일한 key 값을 넣었을 때 업데이트 된다.
+
+---
+
+## Variable Range
+
+[VariableRange.sol]()
+
+- 전역변수로 만든 데이터는 Storage에 저장된다.
+- 함수 내부에 생성한 데이터는 Memory에 저장된다.
+
+---
+
+## Address
+
+[Address.sol]()
+
+- 체크섬이 완료되서 대소문자가 규칙성에 맞게 정상적으로 반영된 것만 사용할 수 있다.
+- 이더리움을 주고 받는 주소나 EOA같은 경우에는 payable을 명시해줘야지만 전송이 가능하다.
