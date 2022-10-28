@@ -101,21 +101,21 @@ Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 ## Struct
 
-[Struct.sol]()
+[Struct.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Struct.sol)
 사용자 자료형을 다루기 위해 사용
 
 ---
 
 ## Enum
 
-[Enum.sol]()
+[Enum.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Enum.sol)
 주로 상태값을 처리하기 위해 사용
 
 ---
 
 ## Array
 
-[Array.sol]()
+[Array.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Array.sol)
 
 delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
@@ -123,7 +123,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ## Mapping
 
-[Mapping.sol]()
+[Mapping.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mapping.sol)
 
 - key값은 중복되지 않는다.
   - 동일한 key 값을 넣었을 때 업데이트 된다.
@@ -132,7 +132,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ## Variable Range
 
-[VariableRange.sol]()
+[VariableRange.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/VariableRange.sol)
 
 - 전역변수로 만든 데이터는 Storage에 저장된다.
 - 함수 내부에 생성한 데이터는 Memory에 저장된다.
@@ -141,7 +141,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ## Address
 
-[Address.sol]()
+[Address.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Address.sol)
 
 - 체크섬이 완료되서 대소문자가 규칙성에 맞게 정상적으로 반영된 것만 사용할 수 있다.
 - 이더리움을 주고 받는 주소나 EOA같은 경우에는 payable을 명시해줘야지만 전송이 가능하다.
