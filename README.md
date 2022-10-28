@@ -109,7 +109,7 @@ SmartContract
 [Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
 
 Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
-
+위와 같이 보안적인면 이외에도 많은 부분이 개선되었으므로 되도록 높은 버전을 쓰자 
 - Version4에서는 2^8 - 1에 +1을 더하면 0이 된다.
 - Version8에서는 에러를 일으킨다.
 
