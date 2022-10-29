@@ -339,6 +339,9 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ## SafeMath
 
 [Math.sol]()
+- 오버플로우, 언더플로우, 0나누기 등 안정적으로 계산할 수 있도록 도와주는 라이브러리를 가지고 있다.
 
-- call : 외부 컨트랙트 함수를 호출할 때 외부함수에서 인스턴스를 만들어서 함수호출이 진행된다.
-- delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리를 한다.
+![image](https://user-images.githubusercontent.com/20445415/198817741-b9377828-66bb-414b-8f1d-7915012bbd94.png)
+
+
+
