@@ -41,7 +41,7 @@
     - [ERC20](#erc20)
     - [Mint](#mint)
     - [Burn](#burn)
-    - [BlackList로 만들기](#blacklist로-만들기)
+    - [BlackList로 만들기](#주소를-blacklist로-만들기)
 
 ---
 
