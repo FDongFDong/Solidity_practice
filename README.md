@@ -347,7 +347,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### SafeMath
 
-[Math.sol]()
+[Math.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Math.sol)
 
 - 오버플로우, 언더플로우, 0나누기 등 안정적으로 계산할 수 있도록 도와주는 라이브러리를 가지고 있다.
 - 0.4 버전의 솔리디티를 사용하더라도 이러한 유틸 라이브러리와 함께 사용하면 안정적으로 컨트랙트를 작성할 수 있다.
@@ -356,9 +356,9 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-### ERC20 토큰 발행하기
+### Openzeppelin으로 ERC20 토큰 발행하기
 
-[ERC20.sol]()
+[ERC20.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC20.sol)
 
 - Openzeppelin에서 이미 ERC20 관련된 내용을 다 상속하고 있어서 사용자가 쉽게 발행할 수 있다.
 
@@ -368,13 +368,13 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### ERC20
 
-[ERC20Example.sol]()
+[ERC20Example.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC20Example.sol)
 
 ---
 
 ### Mint
 
-[Mint.sol]()
+[Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mint.sol)
 
 - Mint() : 토큰 추가적으로 발행하기
 
@@ -382,7 +382,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Burn
 
-[Burn.sol]()
+[Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Burn.sol)
 
 - Burn() : 토큰 소각하기
   - 사용자의 잔액을 balance에서 없애버리기
@@ -392,7 +392,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### 주소를 BlackList로 만들기
 
-[BlackList.sol]()
+[BlackList.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlackList.sol)
 
 - mapping으로 black list 주소 저장
 - 블랙리스트 주소를 boolean 값으로 설정
