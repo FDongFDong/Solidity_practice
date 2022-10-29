@@ -1,4 +1,4 @@
-//SPDS-License-Identifier : MIT
+//SPDX-License-Identifier : MIT
 pragma solidity >=0.8.0 <0.9.0;
 
 // contract 바깥에 써도되고 안에써도 상관없다.
