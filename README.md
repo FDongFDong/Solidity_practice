@@ -30,6 +30,9 @@
   - [Override](#override)
   - [Super](#super)
   - [다중 상속](#다중-상속)
+  - [Check Contract](#check-contract)
+  - [Transfer, Send, Call](#transfer-send-call)
+  - [call, delegate call](#call-delegate-call)
 
 ---
 
@@ -109,7 +112,8 @@ SmartContract
 [Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
 
 Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
-위와 같이 보안적인면 이외에도 많은 부분이 개선되었으므로 되도록 높은 버전을 쓰자 
+위와 같이 보안적인면 이외에도 많은 부분이 개선되었으므로 되도록 높은 버전을 쓰자
+
 - Version4에서는 2^8 - 1에 +1을 더하면 0이 된다.
 - Version8에서는 에러를 일으킨다.
 
@@ -282,13 +286,46 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 [Overriding.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Overriding.sol)
 
 - 같은 이름의 함수를 오버라이드 하기 위해선 부모 컨트랙트에 있는 함수에 virtual 키워드를 자식 컨트랙트에 있는 함수에는 override 키워드를 넣어준다.
-___
+
+---
+
 ## Super
 
 [Super.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Super.sol)
 
 - Super 키워드를 사용하면 부모 컨트랙트에 접근할 수 있다.
-___
+
+---
+
 ## 다중 상속
 
 [MultiInheritance.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/MultiInheritance.sol)
+
+---
+
+## Check Contract
+
+[checkContract.sol]()
+
+전달받은 주소가 컨트랙트인지 EOA인지 확인하는 방법
+
+---
+
+## Transfer, Send, Call
+
+[ethTransfer.sol]()
+이더리움을 전송하는 방법은 3가지가 있으며 return 값에 차이가 있다.
+
+---
+
+## call, delegate call
+
+[call.sol]()
+[delegateCall.sol]()
+
+다른 컨트랙트에 있는 함수 호출하기
+
+데이터 처리를 어디서 하느냐에 따라 구분됨.
+
+call : 외부 컨트랙트 함수를 호출할 때 외부함수에서 인스턴스를 만들어서 함수호출이 진행된다.
+delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리를 한다.
