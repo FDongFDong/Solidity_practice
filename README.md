@@ -8,10 +8,10 @@
     - [Operation](#operation)
     - [Function](#function)
     - [Visibility](#visibility)
-  - [Version](#version)
+    - [Version](#version)
     - [Struct](#struct)
-  - [Enum](#enum)
-  - [Array](#array)
+    - [Enum](#enum)
+    - [Array](#array)
     - [Mapping](#mapping)
     - [Variable Range](#variable-range)
     - [Address](#address)
@@ -22,26 +22,26 @@
     - [Transaction Property](#transaction-property)
     - [Modifier](#modifier)
     - [Require](#require)
-  - [Assert](#assert)
-  - [Revert](#revert)
-  - [Try-Catch](#try-catch)
-  - [CustomError](#customerror)
-  - [Fallback, Receive](#fallback-receive)
-  - [상속](#상속)
-  - [Override](#override)
-  - [Super](#super)
-  - [다중 상속](#다중-상속)
-  - [Check Contract](#check-contract)
-  - [Transfer, Send, Call](#transfer-send-call)
-  - [call, delegate call](#call-delegate-call)
-- [Openzeppelin 사용하기](#openzeppelin-사용하기)
-  - [SafeMath](#safemath)
-  - [ERC20 토큰 발행하기](#erc20-토큰-발행하기)
-- [ERC20 코드 짜보며 살펴보기](#erc20-코드-짜보며-살펴보기)
-  - [ERC20](#erc20)
-  - [Mint](#mint)
-  - [Burn](#burn)
-  - [BlackList로 만들기](#blacklist로-만들기)
+    - [Assert](#assert)
+    - [Revert](#revert)
+    - [Try-Catch](#try-catch)
+    - [CustomError](#customerror)
+    - [Fallback, Receive](#fallback-receive)
+    - [상속](#상속)
+    - [Override](#override)
+    - [Super](#super)
+    - [다중 상속](#다중-상속)
+    - [Check Contract](#check-contract)
+    - [Transfer, Send, Call](#transfer-send-call)
+    - [call, delegate call](#call-delegate-call)
+  - [Openzeppelin 사용하기](#openzeppelin-사용하기)
+    - [SafeMath](#safemath)
+    - [ERC20 토큰 발행하기](#erc20-토큰-발행하기)
+  - [ERC20 코드 짜보며 살펴보기](#erc20-코드-짜보며-살펴보기)
+    - [ERC20](#erc20)
+    - [Mint](#mint)
+    - [Burn](#burn)
+    - [BlackList로 만들기](#blacklist로-만들기)
 
 ---
 
@@ -117,7 +117,7 @@ SmartContract
 
 ---
 
-## Version
+### Version
 
 [Version4.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 [Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
@@ -137,14 +137,14 @@ Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 ---
 
-## Enum
+### Enum
 
 [Enum.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Enum.sol)
 주로 상태값을 처리하기 위해 사용
 
 ---
 
-## Array
+### Array
 
 [Array.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Array.sol)
 
@@ -242,7 +242,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Assert
+### Assert
 
 [Assert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Assert.sol)
 
@@ -251,7 +251,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Revert
+### Revert
 
 [Revert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Revert.sol)
 
@@ -260,7 +260,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Try-Catch
+### Try-Catch
 
 [TryCatch.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TryCatch.sol)
 
@@ -268,7 +268,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## CustomError
+### CustomError
 
 [CustomError.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
 
@@ -276,7 +276,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Fallback, Receive
+### Fallback, Receive
 
 [Fallback.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Fallback.sol)
 
@@ -288,11 +288,11 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## 상속
+### 상속
 
 [Inherit.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Inherit.sol)
 
-## Override
+### Override
 
 [Overriding.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Overriding.sol)
 
@@ -300,7 +300,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Super
+### Super
 
 [Super.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Super.sol)
 
@@ -308,31 +308,31 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## 다중 상속
+### 다중 상속
 
 [MultiInheritance.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/MultiInheritance.sol)
 
 ---
 
-## Check Contract
+### Check Contract
 
-[checkContract.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/checkContract.sol)
+[CheckContract.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CheckContract.sol)
 
 전달받은 주소가 컨트랙트인지 EOA인지 확인하는 방법
 
 ---
 
-## Transfer, Send, Call
+### Transfer, Send, Call
 
-[ethTransfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ethTransfer.sol)
+[EthTransfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/EethTransfer.sol)
 이더리움을 전송하는 방법은 3가지가 있으며 return 값에 차이가 있다.
 
 ---
 
-## call, delegate call
+### call, delegate call
 
-[call.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/call.sol)
-[delegateCall.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/delegateCall.sol)
+[Call.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Call.sol)
+[DelegateCall.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/DelegateCall.sol)
 
 다른 컨트랙트에 있는 함수 호출하기
 
@@ -343,9 +343,9 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-# Openzeppelin 사용하기
+## Openzeppelin 사용하기
 
-## SafeMath
+### SafeMath
 
 [Math.sol]()
 
@@ -356,7 +356,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-## ERC20 토큰 발행하기
+### ERC20 토큰 발행하기
 
 [ERC20.sol]()
 
@@ -364,23 +364,23 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-# ERC20 코드 짜보며 살펴보기
+## ERC20 코드 짜보며 살펴보기
 
-## ERC20
+### ERC20
 
 [ERC20Example.sol]()
 
 ---
 
-## Mint
-
----
+### Mint
 
 [Mint.sol]()
 
 - Mint() : 토큰 추가적으로 발행하기
 
-## Burn
+---
+
+### Burn
 
 [Burn.sol]()
 
@@ -388,6 +388,12 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
   - 사용자의 잔액을 balance에서 없애버리기
   - 사용자의 잔액을 쓸 수 없는 주소로 보내기
 
-## BlackList로 만들기
+---
+
+### BlackList로 만들기
 
 [BlackList.sol]()
+
+- mapping으로 black list 주소 저장
+- 블랙리스트 주소를 boolean 값으로 설정
+- 블랙리스트 주소는 토큰을 전송하지 못하도록 modifier 설정
