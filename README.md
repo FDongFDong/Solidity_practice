@@ -390,10 +390,12 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-### BlackList로 만들기
+### 주소를 BlackList로 만들기
 
 [BlackList.sol]()
 
 - mapping으로 black list 주소 저장
 - 블랙리스트 주소를 boolean 값으로 설정
 - 블랙리스트 주소는 토큰을 전송하지 못하도록 modifier 설정
+
+![image](https://user-images.githubusercontent.com/20445415/198827539-c7a8ed72-5b52-4ac2-94dc-3f4b77f7228d.png)
