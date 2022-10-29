@@ -305,7 +305,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ## Check Contract
 
-[checkContract.sol]()
+[checkContract.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/checkContract.sol)
 
 전달받은 주소가 컨트랙트인지 EOA인지 확인하는 방법
 
@@ -313,15 +313,15 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ## Transfer, Send, Call
 
-[ethTransfer.sol]()
+[ethTransfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ethTransfer.sol)
 이더리움을 전송하는 방법은 3가지가 있으며 return 값에 차이가 있다.
 
 ---
 
 ## call, delegate call
 
-[call.sol]()
-[delegateCall.sol]()
+[call.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/call.sol)
+[delegateCall.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/delegateCall.sol)
 
 다른 컨트랙트에 있는 함수 호출하기
 
