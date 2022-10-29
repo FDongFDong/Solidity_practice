@@ -391,3 +391,5 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ## BlackList로 만들기
 
 [BlackList.sol]()
+![image](https://user-images.githubusercontent.com/20445415/198824353-a744f74f-8a16-4a1c-be60-dda217fea35a.png)
+
