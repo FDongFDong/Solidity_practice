@@ -37,12 +37,12 @@
   - [Openzeppelin 사용하기](#openzeppelin-사용하기)
     - [SafeMath](#safemath)
     - [Openzeppelin으로 ERC20 토큰 발행하기](#openzeppelin으로-erc20-토큰-발행하기)
-  - [ERC20 코드 짜보며 살펴보기](#erc20-코드-짜보며-살펴보기)
+  - [ERC20 코드 작성하며 살펴보기](#erc20-코드-작성하며-살펴보기)
     - [ERC20](#erc20)
     - [Mint](#mint)
     - [Burn](#burn)
     - [주소를 BlackList로 만들기](#주소를-blacklist로-만들기)
-  - [ERC721 코드 짜보며 살펴보기](#erc721-코드-짜보며-살펴보기)
+  - [ERC721 코드 작성하며 살펴보기](#erc721-코드-작성하며-살펴보기)
     - [Mint](#mint-1)
     - [Burn](#burn-1)
     - [Transfer](#transfer)
@@ -369,7 +369,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-## ERC20 코드 짜보며 살펴보기
+## ERC20 코드 작성하며 살펴보기
 
 ### ERC20
 
@@ -407,15 +407,15 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
-## ERC721 코드 짜보며 살펴보기
+## ERC721 코드 작성하며 살펴보기
 
-[ERC721.sol]()
+[ERC721.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721.sol)
 
 ---
 
 ### Mint
 
-[ERC721Mint.sol]()
+[ERC721Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Mint.sol)
 
 - 토큰 수량 1개 증가
 - 토큰 주인 입력
@@ -427,7 +427,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Burn
 
-[ERC721Burn.sol]()
+[ERC721Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Burn.sol)
 
 - 해당 토큰의 모든 권한 삭제(초기화)
 - 발행량 1개 감소
@@ -438,7 +438,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Transfer
 
-[ERC721Transfer.sol]()
+[ERC721Transfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Transfer.sol)
 
 - 전송을 요청한 사용자 확인
 - 토큰에 등록된 권한 모두 삭제
@@ -452,9 +452,11 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ### NFT를 발행하는 방식
 
 - 외부 데이터에 이미지 값을 저장하고 그 주소정보만 토큰에 저장하는 방식
-  [ERC721External.sol]()
+
+  [ERC721External.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721External.sol)
+
 - 미리 정해진 공급량에서 랜덤한 값을 생성해서 NFT 발행하는 방식
-  - 랜덤한 각 값에 이미지가 미리 지정되어있어야 한다.
-- [ERC721Random.sol]()
+
+  [ERC721Random.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Random.sol)
 
 ---
