@@ -36,12 +36,15 @@
     - [call, delegate call](#call-delegate-call)
   - [Openzeppelin 사용하기](#openzeppelin-사용하기)
     - [SafeMath](#safemath)
-    - [ERC20 토큰 발행하기](#erc20-토큰-발행하기)
+    - [Openzeppelin으로 ERC20 토큰 발행하기](#openzeppelin으로-erc20-토큰-발행하기)
   - [ERC20 코드 짜보며 살펴보기](#erc20-코드-짜보며-살펴보기)
     - [ERC20](#erc20)
     - [Mint](#mint)
     - [Burn](#burn)
-    - [BlackList로 만들기](#주소를-blacklist로-만들기)
+    - [주소를 BlackList로 만들기](#주소를-blacklist로-만들기)
+  - [ERC721 코드 짜보며 살펴보기](#erc721-코드-짜보며-살펴보기)
+    - [Mint](#mint-1)
+    - [Burn](#burn-1)
 
 ---
 
@@ -399,3 +402,21 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 - 블랙리스트 주소는 토큰을 전송하지 못하도록 modifier 설정
 
 ![image](https://user-images.githubusercontent.com/20445415/198827539-c7a8ed72-5b52-4ac2-94dc-3f4b77f7228d.png)
+
+---
+
+## ERC721 코드 짜보며 살펴보기
+
+[ERC721.sol]()
+
+---
+
+### Mint
+
+[ERC721Mint.sol]()
+
+---
+
+### Burn
+
+[ERC721Burn.sol]()
