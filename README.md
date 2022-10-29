@@ -1,26 +1,27 @@
-# solidity 기본 문법
+# Solidity
 
-- [solidity 기본 문법](#solidity-기본-문법)
-  - [Compile](#compile)
-  - [값 변경](#값-변경)
-  - [Value 자료형](#value-자료형)
-  - [Operation](#operation)
-  - [Function](#function)
-  - [Visibility](#visibility)
+- [Solidity](#solidity)
+  - [Solidity 기본 문법](#solidity-기본-문법)
+    - [Compile](#compile)
+    - [값 변경](#값-변경)
+    - [Value 자료형](#value-자료형)
+    - [Operation](#operation)
+    - [Function](#function)
+    - [Visibility](#visibility)
   - [Version](#version)
-  - [Struct](#struct)
+    - [Struct](#struct)
   - [Enum](#enum)
   - [Array](#array)
-  - [Mapping](#mapping)
-  - [Variable Range](#variable-range)
-  - [Address](#address)
-  - [This](#this)
-  - [If Else](#if-else)
-  - [Loop](#loop)
-  - [Block Property](#block-property)
-  - [Transaction Property](#transaction-property)
-  - [Modifier](#modifier)
-  - [Require](#require)
+    - [Mapping](#mapping)
+    - [Variable Range](#variable-range)
+    - [Address](#address)
+    - [This](#this)
+    - [If Else](#if-else)
+    - [Loop](#loop)
+    - [Block Property](#block-property)
+    - [Transaction Property](#transaction-property)
+    - [Modifier](#modifier)
+    - [Require](#require)
   - [Assert](#assert)
   - [Revert](#revert)
   - [Try-Catch](#try-catch)
@@ -35,8 +36,16 @@
   - [call, delegate call](#call-delegate-call)
 - [Openzeppelin 사용하기](#openzeppelin-사용하기)
   - [SafeMath](#safemath)
+  - [ERC20 토큰 발행하기](#erc20-토큰-발행하기)
+- [ERC20 코드 짜보며 살펴보기](#erc20-코드-짜보며-살펴보기)
+  - [ERC20](#erc20)
+  - [Mint](#mint)
+  - [Burn](#burn)
+  - [BlackList로 만들기](#blacklist로-만들기)
 
 ---
+
+## Solidity 기본 문법
 
 1. Contract 파일 작성
 2. (컴파일) -> Output: EVM 바이트코드, ABI
@@ -44,7 +53,7 @@
 
 = 배포도 트랜잭션이다.
 
-## Compile
+### Compile
 
 컴파일 시 Contract의 Bytecode와 ABI가 출력된다.
 
@@ -60,7 +69,7 @@ SmartContract
 
 ---
 
-## 값 변경
+### 값 변경
 
 [First.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
 
@@ -68,7 +77,7 @@ SmartContract
 
 ---
 
-## Value 자료형
+### Value 자료형
 
 [Data.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Data.sol)
 
@@ -78,13 +87,13 @@ SmartContract
 
 ---
 
-## Operation
+### Operation
 
 [Operation.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Operation.sol)
 
 ---
 
-## Function
+### Function
 
 [Function.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
@@ -97,7 +106,7 @@ SmartContract
 
 ---
 
-## Visibility
+### Visibility
 
 [FunctionVisiblilty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
@@ -121,7 +130,7 @@ Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 ---
 
-## Struct
+### Struct
 
 [Struct.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Struct.sol)
 사용자 자료형을 다루기 위해 사용
@@ -143,7 +152,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ---
 
-## Mapping
+### Mapping
 
 [Mapping.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mapping.sol)
 
@@ -152,7 +161,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ---
 
-## Variable Range
+### Variable Range
 
 [VariableRange.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/VariableRange.sol)
 
@@ -161,7 +170,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ---
 
-## Address
+### Address
 
 [Address.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Address.sol)
 
@@ -170,14 +179,14 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ---
 
-## This
+### This
 
 [This.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/This.sol)
 this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## If Else
+### If Else
 
 [IfElse.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/IfElse.sol)
 
@@ -187,7 +196,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Loop
+### Loop
 
 [Loop.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Loop.sol)
 
@@ -197,7 +206,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Block Property
+### Block Property
 
 [BlockProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty.sol)
 [BlockProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty2.sol)
@@ -210,14 +219,14 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Transaction Property
+### Transaction Property
 
 [TransactionProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty.sol)
 [TransactionProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty2.sol)
 
 ---
 
-## Modifier
+### Modifier
 
 [Modifier.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Modifier.sol)
 
@@ -225,7 +234,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
-## Require
+### Require
 
 [Require.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Require.sol)
 
@@ -339,10 +348,46 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ## SafeMath
 
 [Math.sol]()
+
 - 오버플로우, 언더플로우, 0나누기 등 안정적으로 계산할 수 있도록 도와주는 라이브러리를 가지고 있다.
 - 0.4 버전의 솔리디티를 사용하더라도 이러한 유틸 라이브러리와 함께 사용하면 안정적으로 컨트랙트를 작성할 수 있다.
 
 ![image](https://user-images.githubusercontent.com/20445415/198817741-b9377828-66bb-414b-8f1d-7915012bbd94.png)
 
+---
 
+## ERC20 토큰 발행하기
 
+[ERC20.sol]()
+
+- Openzeppelin에서 이미 ERC20 관련된 내용을 다 상속하고 있어서 사용자가 쉽게 발행할 수 있다.
+
+---
+
+# ERC20 코드 짜보며 살펴보기
+
+## ERC20
+
+[ERC20Example.sol]()
+
+---
+
+## Mint
+
+---
+
+[Mint.sol]()
+
+- Mint() : 토큰 추가적으로 발행하기
+
+## Burn
+
+[Burn.sol]()
+
+- Burn() : 토큰 소각하기
+  - 사용자의 잔액을 balance에서 없애버리기
+  - 사용자의 잔액을 쓸 수 없는 주소로 보내기
+
+## BlackList로 만들기
+
+[BlackList.sol]()
