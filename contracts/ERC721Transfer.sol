@@ -54,21 +54,35 @@ contract ERC721 {
     uint256 tokenId,
     string memory url
   ) public {
-    // 토큰을 수량 증가
     _balances[to] += 1;
-    // 토큰의 주인정보 입력
     _owners[tokenId] = to;
-    // 토큰 정보
     _tokenInfo[tokenId] = url;
-    // 전체 발행량을 한개 늘려준다.
     totalSupply += 1;
-    // 0번째 주소에서 to 주소로 전송이 되면서 토큰이 발행됨을 알려주는 event
     emit Transfer(address(0), to, tokenId);
   }
 
-  function burn(uint256 tokenId) public {}
+  function burn(uint256 tokenId) public {
+    address owner = _owners[tokenId];
+    delete _tokenApprovals[tokenId];
+    _balances[owner] -= 1;
+    delete _owners[tokenId];
+    emit Transfer(owner, address(0), tokenId);
+  }
 
-  function transfer(address to, uint256 tokenId) public {}
+  function transfer(address to, uint256 tokenId) public {
+    // 전송을 요청한 사람이 실제 토큰의 주인인지 확인
+    require(_owners[tokenId] == msg.sender, 'Incorrect Owner');
+    // 기존에 등록되어 있는 권한 모두 삭제
+    delete _tokenApprovals[tokenId];
+    // 요청한 주소의 수량 감소
+    _balances[msg.sender] -= 1;
+    // 받는 주소의 수량 증가
+    _balances[to] += 1;
+    // 토큰 주인을 받는 사람으로 변경
+    _owners[tokenId] = to;
+    // 토큰의 주인이 변경됨을 event
+    emit Transfer(msg.sender, to, tokenId);
+  }
 
   function approve(address to, uint256 tokenId) public {}
 
