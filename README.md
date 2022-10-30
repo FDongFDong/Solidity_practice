@@ -47,6 +47,9 @@
     - [Burn](#burn-1)
     - [Transfer](#transfer)
     - [NFT를 발행하는 방식](#nft를-발행하는-방식)
+  - [Upgradable Contract](#upgradable-contract)
+    - [Openzeppelin으로 구현한 UUPSUpgrdeable](#openzeppelin으로-구현한-uupsupgrdeable)
+  - [외부 컨트랙트 함수 호출하기](#외부-컨트랙트-함수-호출하기)
 
 ---
 
@@ -460,3 +463,34 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
   [ERC721Random.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Random.sol)
 
 ---
+
+## Upgradable Contract
+
+이미 네트워크에 배포된 컨트랙트는 수정이 불가능하기 때문에 Proxy를 이용하여 컨트랙트 주소값만 바꿔 다른 컨트랙트를 연결할 수 있다.
+
+- fallback을 이용해 Delegate Call을 이용한다.
+- Proxy와 Implement에 있는 state값을 동일한 순서, 동일한 값으로 넣어줘야한다.
+
+테스트 진행 방법(Remix IDE)
+
+Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변수 1을 증가시킬 뿐만 아니라 1을 감소 시킬 수 있는 IncrementationV2를 이용해 실습 진행
+
+- Proxy.sol를 먼저 배포한다.
+- ImplementV1.sol 배포
+- ImplementV2.sol 배포
+- [Proxy] setImplementation에 ImplementV1의 컨트랙트 주소값을 입력값으로 넣고 트랜잭션을 보낸다.
+- [ImplementationV1] Increase 함수를 통해 값을 1 증가 시킨 후 트랜잭션에 있는 input 값을 복사해서 [Proxy] Low level interactions CALLDATA에 넣어준다.
+- [Proxy] setImplementation에 ImplementV2의 컨트랙트 주소값을 입력값으로 넣고 트랜잭션을 보낸다.
+- [ImplementationV2] Decrement 함수를 통해 값을 1 감소 시킨 후 트랜잭션에 있는 input 값을 복사해서 [Proxy] Low level interactions CALLDATA에 넣어준다.
+
+### Openzeppelin으로 구현한 UUPSUpgrdeable
+
+[UUPS_ProxyV1.sol]()
+[UUPS_ProxyV2.sol]()
+
+## 외부 컨트랙트 함수 호출하기
+
+[Interface.sol]
+
+- 인터페이스를 통해 정의 후 내가 만든 컨트랙트에서 인터페이스를 통해 호출한다.
+- Proxy와의 차이점으로는 delegate call이 아닌 단순 call이기 때문에 호출 하고자하는 컨트랙트의 state값을 그대로 가져온다.
