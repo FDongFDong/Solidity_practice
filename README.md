@@ -50,6 +50,9 @@
   - [Upgradable Contract](#upgradable-contract)
     - [Openzeppelin으로 구현한 UUPSUpgrdeable](#openzeppelin으로-구현한-uupsupgrdeable)
   - [외부 컨트랙트 함수 호출하기](#외부-컨트랙트-함수-호출하기)
+  - [Offchain Data 가져오기](#offchain-data-가져오기)
+    - [외부 데이터를 가져와야 하는 이유](#외부-데이터를-가져와야-하는-이유)
+    - [Chainlink - External Data](#chainlink---external-data)
 
 ---
 
@@ -351,7 +354,11 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
+---
+
 ## Openzeppelin 사용하기
+
+---
 
 ### SafeMath
 
@@ -372,7 +379,11 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
+---
+
 ## ERC20 코드 작성하며 살펴보기
+
+---
 
 ### ERC20
 
@@ -407,6 +418,8 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 - 블랙리스트 주소는 토큰을 전송하지 못하도록 modifier 설정
 
 ![image](https://user-images.githubusercontent.com/20445415/198827539-c7a8ed72-5b52-4ac2-94dc-3f4b77f7228d.png)
+
+---
 
 ---
 
@@ -464,6 +477,8 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ---
 
+---
+
 ## Upgradable Contract
 
 이미 네트워크에 배포된 컨트랙트는 수정이 불가능하기 때문에 Proxy를 이용하여 컨트랙트 주소값만 바꿔 다른 컨트랙트를 연결할 수 있다.
@@ -488,9 +503,34 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 [UUPS_ProxyV1.sol]()
 [UUPS_ProxyV2.sol]()
 
+---
+
+---
+
 ## 외부 컨트랙트 함수 호출하기
 
 [Interface.sol]
 
 - 인터페이스를 통해 정의 후 내가 만든 컨트랙트에서 인터페이스를 통해 호출한다.
 - Proxy와의 차이점으로는 delegate call이 아닌 단순 call이기 때문에 호출 하고자하는 컨트랙트의 state값을 그대로 가져온다.
+
+---
+
+---
+
+## Offchain Data 가져오기
+
+---
+
+### 외부 데이터를 가져와야 하는 이유
+
+[OnchainRandomAttack]()
+
+랜덤한 값을 생성 후 같은 블록 네트워크 안에 있는 다른 컨트랙트로 해당 컨트랙트의 답을 맞추는 코드
+
+> 위 코드로 인하여 문제점을 파악할 수 있음
+
+- 블록체인 상에서 신뢰할 수 없거나 안정성을 보장할 수 없을 때 조금더 안전한 환경에서 생성된 값을 가져오는 경우
+  - ex. random한 값
+
+### Chainlink - External Data
