@@ -465,6 +465,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ---
 
 ## Upgradable Contract
+### 이해하기
 - [Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
 - [ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
 - [ImplementV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV2.sol)
