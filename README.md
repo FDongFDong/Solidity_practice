@@ -465,6 +465,9 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ---
 
 ## Upgradable Contract
+- [Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
+- [ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
+- [ImplementV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV2.sol)
 
 이미 네트워크에 배포된 컨트랙트는 수정이 불가능하기 때문에 Proxy를 이용하여 컨트랙트 주소값만 바꿔 다른 컨트랙트를 연결할 수 있다.
 
@@ -485,12 +488,12 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 ### Openzeppelin으로 구현한 UUPSUpgrdeable
 
-[UUPS_ProxyV1.sol]()
-[UUPS_ProxyV2.sol]()
+- [UUPS_ProxyV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV1.sol)
+- [UUPS_ProxyV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV2.sol)
 
 ## 외부 컨트랙트 함수 호출하기
 
-[Interface.sol]
+[Interface.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Interface.sol)
 
 - 인터페이스를 통해 정의 후 내가 만든 컨트랙트에서 인터페이스를 통해 호출한다.
 - Proxy와의 차이점으로는 delegate call이 아닌 단순 call이기 때문에 호출 하고자하는 컨트랙트의 state값을 그대로 가져온다.
