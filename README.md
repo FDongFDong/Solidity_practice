@@ -532,9 +532,10 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 ### 외부 데이터를 가져와야 하는 이유
 
-[OnchainRandomAttack]()
+[OnchainRandomAttack.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/OnchainRandomAttack.sol)
 
 랜덤한 값을 생성 후 같은 블록 네트워크 안에 있는 다른 컨트랙트로 해당 컨트랙트의 답을 맞추는 코드
+![image](https://user-images.githubusercontent.com/20445415/198870227-676a841c-2b37-4998-ae46-671f70cd61e4.png)
 
 > 위 코드로 인하여 문제점을 파악할 수 있음
 
