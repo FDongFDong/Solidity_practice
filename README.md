@@ -48,6 +48,7 @@
     - [Transfer](#transfer)
     - [NFT를 발행하는 방식](#nft를-발행하는-방식)
   - [Upgradable Contract](#upgradable-contract)
+    - [Upgradable Contract 코드 작성하며 이해하기](#Upgradable-Contract-코드-작성하며-이해하기)  
     - [Openzeppelin으로 구현한 UUPSUpgrdeable](#openzeppelin으로-구현한-uupsupgrdeable)
   - [외부 컨트랙트 함수 호출하기](#외부-컨트랙트-함수-호출하기)
 
@@ -465,7 +466,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ---
 
 ## Upgradable Contract
-### 이해하기
+### Upgradable Contract 코드 작성하며 이해하기
 - [Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
 - [ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
 - [ImplementV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV2.sol)
