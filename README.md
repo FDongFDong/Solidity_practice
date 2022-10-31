@@ -547,6 +547,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 ### Chainlink - External Data
 
 **Random Number 가져오기**
+
 [random_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/random_chainlink.sol)
 - 위 방법 보다 조금 더 안정적인 방법을 ChainLink에서 제공하고 있다.
 
@@ -560,6 +561,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 ---
 
 **외부에서 이더리움 시세 요청하기**
+
 [getprice_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/getprice_chainlink.sol)
 - chainlink의 AggregatorV3Interface을 이용하여 가져온다.
 - 거래소의 평균값을 사용자에게 전달해준다.
