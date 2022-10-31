@@ -83,7 +83,7 @@ SmartContract
 
 ### 값 변경
 
-[First.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
+소스코드 : [First.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/First.sol)
 
 값을 변경하려면 함수를 사용하여 값을 변경해야한다.
 
@@ -91,7 +91,7 @@ SmartContract
 
 ### Value 자료형
 
-[Data.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Data.sol)
+소스코드 : [Data.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Data.sol)
 
 - 자료형에도 int8, int32, int256 등 값이 다양하다.
   가스비를 효율적으로 사용하기 위함
@@ -101,13 +101,13 @@ SmartContract
 
 ### Operation
 
-[Operation.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Operation.sol)
+소스코드 : [Operation.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Operation.sol)
 
 ---
 
 ### Function
 
-[Function.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
+소스코드 : [Function.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
 - state 값을 변경 시키는 경우
   - 트랜잭션을 발생시켜 가스비를 소모한다.
@@ -120,7 +120,7 @@ SmartContract
 
 ### Visibility
 
-[FunctionVisiblilty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
+소스코드 : [FunctionVisiblilty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
 
 - private : 외부 공개 x, 상속된 컨트랙트 x, 내부에서 o
 - internal : 외부 공개 x, 상속된 컨트랙트 o, 내부에서 o
@@ -131,8 +131,8 @@ SmartContract
 
 ### Version
 
-[Version4.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
-[Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
+소스코드 : [Version4.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Function.sol)
+소스코드 : [Version8.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Version8.sol)
 
 Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 위와 같이 보안적인면 이외에도 많은 부분이 개선되었으므로 되도록 높은 버전을 쓰자
@@ -144,21 +144,21 @@ Version 4, Version 8 오버플로우 처리 방법이 서로 다르다.
 
 ### Struct
 
-[Struct.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Struct.sol)
+소스코드 : [Struct.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Struct.sol)
 사용자 자료형을 다루기 위해 사용
 
 ---
 
 ### Enum
 
-[Enum.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Enum.sol)
+소스코드 : [Enum.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Enum.sol)
 주로 상태값을 처리하기 위해 사용
 
 ---
 
 ### Array
 
-[Array.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Array.sol)
+소스코드 : [Array.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Array.sol)
 
 delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
@@ -166,7 +166,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ### Mapping
 
-[Mapping.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mapping.sol)
+소스코드 : [Mapping.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mapping.sol)
 
 - key값은 중복되지 않는다.
   - 동일한 key 값을 넣었을 때 업데이트 된다.
@@ -175,7 +175,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ### Variable Range
 
-[VariableRange.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/VariableRange.sol)
+소스코드 : [VariableRange.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/VariableRange.sol)
 
 - 전역변수로 만든 데이터는 Storage에 저장된다.
 - 함수 내부에 생성한 데이터는 Memory에 저장된다.
@@ -184,7 +184,7 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ### Address
 
-[Address.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Address.sol)
+소스코드 : [Address.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Address.sol)
 
 - 체크섬이 완료되서 대소문자가 규칙성에 맞게 정상적으로 반영된 것만 사용할 수 있다.
 - 이더리움을 주고 받는 주소나 EOA같은 경우에는 payable을 명시해줘야지만 전송이 가능하다.
@@ -193,14 +193,14 @@ delete 의 경우 해당 인덱스가 사라지지 않고 0으로 변한다.
 
 ### This
 
-[This.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/This.sol)
+소스코드 : [This.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/This.sol)
 this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ---
 
 ### If Else
 
-[IfElse.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/IfElse.sol)
+소스코드 : [IfElse.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/IfElse.sol)
 
 - If
 - If - else
@@ -210,7 +210,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Loop
 
-[Loop.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Loop.sol)
+소스코드 : [Loop.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Loop.sol)
 
 - For
 - While
@@ -220,8 +220,8 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Block Property
 
-[BlockProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty.sol)
-[BlockProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty2.sol)
+소스코드 : [BlockProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty.sol)
+소스코드 : [BlockProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlockProperty2.sol)
 
 ---
 
@@ -233,14 +233,14 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Transaction Property
 
-[TransactionProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty.sol)
-[TransactionProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty2.sol)
+소스코드 : [TransactionProperty.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty.sol)
+소스코드 : [TransactionProperty2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TransactionProperty2.sol)
 
 ---
 
 ### Modifier
 
-[Modifier.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Modifier.sol)
+소스코드 : [Modifier.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Modifier.sol)
 
 - 중복으로 사용되는 조건을 체크할 수 있다.
 
@@ -248,7 +248,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Require
 
-[Require.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Require.sol)
+소스코드 : [Require.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Require.sol)
 
 - Error 구문을 출력할 수 있다.
 
@@ -256,7 +256,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Assert
 
-[Assert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Assert.sol)
+소스코드 : [Assert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Assert.sol)
 
 - Require문과 달리 단순히 조건만 체크할 때 사용한다. Error 구문을 출력하지 못함.
 - 조건이 성립하지 않을 때는 스마트 컨트랙트에서 Error을 발생시키고 트랜잭션으로 인해 변경된 state를 rollback시키고 사용자가 제공한 gas price를 되돌려준다.
@@ -265,7 +265,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Revert
 
-[Revert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Revert.sol)
+소스코드 : [Revert.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Revert.sol)
 
 - 무조건 Error를 발생시키고 State를 Rollback한다.
 - Error 구문을 출력할 수 있다.
@@ -274,7 +274,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Try-Catch
 
-[TryCatch.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TryCatch.sol)
+소스코드 : [TryCatch.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/TryCatch.sol)
 
 - 일반적으로 사용할 수 없으며 다른 함수를 호출했을 경우에만 사용할 수 있다.
 
@@ -282,7 +282,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### CustomError
 
-[CustomError.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
+소스코드 : [CustomError.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CustomError.sol)
 
 - 중복적인 Error을 처리할 때 사용
 
@@ -290,7 +290,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Fallback, Receive
 
-[Fallback.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Fallback.sol)
+소스코드 : [Fallback.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Fallback.sol)
 
 - 사용자가 존재하지 않는 함수를 호출 할 때
 - msg.data가 비어있지 않는 경우
@@ -302,11 +302,11 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### 상속
 
-[Inherit.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Inherit.sol)
+소스코드 : [Inherit.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Inherit.sol)
 
 ### Override
 
-[Overriding.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Overriding.sol)
+소스코드 : [Overriding.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Overriding.sol)
 
 - 같은 이름의 함수를 오버라이드 하기 위해선 부모 컨트랙트에 있는 함수에 virtual 키워드를 자식 컨트랙트에 있는 함수에는 override 키워드를 넣어준다.
 
@@ -314,7 +314,7 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Super
 
-[Super.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Super.sol)
+소스코드 : [Super.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Super.sol)
 
 - Super 키워드를 사용하면 부모 컨트랙트에 접근할 수 있다.
 
@@ -322,13 +322,13 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### 다중 상속
 
-[MultiInheritance.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/MultiInheritance.sol)
+소스코드 : [MultiInheritance.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/MultiInheritance.sol)
 
 ---
 
 ### Check Contract
 
-[CheckContract.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CheckContract.sol)
+소스코드 : [CheckContract.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/CheckContract.sol)
 
 전달받은 주소가 컨트랙트인지 EOA인지 확인하는 방법
 
@@ -336,15 +336,15 @@ this 키워드는 자기 자신 컨트랙트를 지칭한다.
 
 ### Transfer, Send, Call
 
-[EthTransfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/EethTransfer.sol)
+소스코드 : [EthTransfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/EethTransfer.sol)
 이더리움을 전송하는 방법은 3가지가 있으며 return 값에 차이가 있다.
 
 ---
 
 ### call, delegate call
 
-[Call.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Call.sol)
-[DelegateCall.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/DelegateCall.sol)
+소스코드 : [Call.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Call.sol)
+소스코드 : [DelegateCall.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/DelegateCall.sol)
 
 다른 컨트랙트에 있는 함수 호출하기
 
@@ -363,7 +363,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### SafeMath
 
-[Math.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Math.sol)
+소스코드 : [Math.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Math.sol)
 
 - 오버플로우, 언더플로우, 0나누기 등 안정적으로 계산할 수 있도록 도와주는 라이브러리를 가지고 있다.
 - 0.4 버전의 솔리디티를 사용하더라도 이러한 유틸 라이브러리와 함께 사용하면 안정적으로 컨트랙트를 작성할 수 있다.
@@ -374,7 +374,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Openzeppelin으로 ERC20 토큰 발행하기
 
-[ERC20.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC20.sol)
+소스코드 : [ERC20.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC20.sol)
 
 - Openzeppelin에서 이미 ERC20 관련된 내용을 다 상속하고 있어서 사용자가 쉽게 발행할 수 있다.
 
@@ -394,7 +394,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Mint
 
-[Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mint.sol)
+소스코드 : [Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Mint.sol)
 
 - Mint() : 토큰 추가적으로 발행하기
 
@@ -402,7 +402,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Burn
 
-[Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Burn.sol)
+[소스코드 : Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Burn.sol)
 
 - Burn() : 토큰 소각하기
   - 사용자의 잔액을 balance에서 없애버리기
@@ -412,7 +412,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### 주소를 BlackList로 만들기
 
-[BlackList.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlackList.sol)
+소스코드 : [BlackList.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/BlackList.sol)
 
 - mapping으로 black list 주소 저장
 - 블랙리스트 주소를 boolean 값으로 설정
@@ -426,13 +426,13 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ## ERC721 코드 작성하며 살펴보기
 
-[ERC721.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721.sol)
+소스코드 : [ERC721.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721.sol)
 
 ---
 
 ### Mint
 
-[ERC721Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Mint.sol)
+소스코드 : [ERC721Mint.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Mint.sol)
 
 - 토큰 수량 1개 증가
 - 토큰 주인 입력
@@ -444,7 +444,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Burn
 
-[ERC721Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Burn.sol)
+소스코드 : [ERC721Burn.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Burn.sol)
 
 - 해당 토큰의 모든 권한 삭제(초기화)
 - 발행량 1개 감소
@@ -455,7 +455,7 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Transfer
 
-[ERC721Transfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Transfer.sol)
+소스코드 : [ERC721Transfer.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Transfer.sol)
 
 - 전송을 요청한 사용자 확인
 - 토큰에 등록된 권한 모두 삭제
@@ -470,11 +470,11 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 - 외부 데이터에 이미지 값을 저장하고 그 주소정보만 토큰에 저장하는 방식
 
-  [ERC721External.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721External.sol)
+  소스코드 : [ERC721External.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721External.sol)
 
 - 미리 정해진 공급량에서 랜덤한 값을 생성해서 NFT 발행하는 방식
 
-  [ERC721Random.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Random.sol)
+  소스코드 : [ERC721Random.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ERC721Random.sol)
 
 ---
 
@@ -484,11 +484,11 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 
 ### Upgradable Contract 코드 작성하며 이해하기
 
-[Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
+소스코드 : [Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
 
-[ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
+소스코드 : [ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
 
-[ImplementV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV2.sol)
+소스코드 : [ImplementV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV2.sol)
 
 이미 네트워크에 배포된 컨트랙트는 수정이 불가능하기 때문에 Proxy를 이용하여 컨트랙트 주소값만 바꿔 다른 컨트랙트를 연결할 수 있다.
 
@@ -509,9 +509,9 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 ### Openzeppelin으로 구현한 UUPSUpgrdeable
 
-[UUPS_ProxyV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV1.sol)
+소스코드 : [UUPS_ProxyV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV1.sol)
 
-[UUPS_ProxyV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV2.sol)
+소스코드 : [UUPS_ProxyV2.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/UUPS_ProxyV2.sol)
 
 ---
 
@@ -519,7 +519,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 ## 외부 컨트랙트 함수 호출하기
 
-[Interface.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Interface.sol)
+소스코드 : [Interface.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Interface.sol)
 
 - 인터페이스를 통해 정의 후 내가 만든 컨트랙트에서 인터페이스를 통해 호출한다.
 - Proxy와의 차이점으로는 delegate call이 아닌 단순 call이기 때문에 호출 하고자하는 컨트랙트의 state값을 그대로 가져온다.
@@ -548,7 +548,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 **Random Number 가져오기**
 
-[random_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/random_chainlink.sol)
+소스코드 : [random_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/random_chainlink.sol)
 - 위 방법 보다 조금 더 안정적인 방법을 ChainLink에서 제공하고 있다.
 
 [chainlink docs](https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/)
@@ -562,7 +562,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 **외부에서 이더리움 시세 요청하기**
 
-[getprice_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/getprice_chainlink.sol)
+소스코드 : [getprice_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/getprice_chainlink.sol)
 - chainlink의 AggregatorV3Interface을 이용하여 가져온다.
 - 거래소의 평균값을 사용자에게 전달해준다.
 - getLatesPrice() : priceFeed에 설정되어 있는 주소로 가서 저장되어 있는 실제 가격정보를 가져온다.
