@@ -549,4 +549,6 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 - 위 방법 보다 조금 더 안정적인 방법을 ChainLink에서 제공하고 있다.
 
 [get a Random Number](https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/)
-[consumer 등록]()
+[consumer 등록](https://vrf.chain.link/goerli/new)
+![image](https://user-images.githubusercontent.com/20445415/198930004-46cc912f-2d07-4ab5-94f6-37df4a5357b3.png)
+
