@@ -1,0 +1,73 @@
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+import '@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol';
+import '@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol';
+
+contract Dice is VRFConsumerBaseV2 {
+  VRFCoordinatorV2Interface COORDINATOR;
+  address private winner;
+
+  uint64 s_subscriptionId = 5857;
+  // https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/
+  address vrfCoordinator = 0x271682DEB8C4E0901D1a1550aD2e64D568E69909;
+  // https://docs.chain.link/docs/vrf/v2/subscription/supported-networks/#configurations
+  bytes32 keyHash =
+    0x8af398995b04c28e9951adb9721ef74c74f93e6a478f39e7e0777be13527e7ef;
+  // https://vrf.chain.link/goerli/new
+  uint32 callbackGasLimit = 100000;
+  uint16 requestConfirmations = 3;
+
+  uint32 numWords = 1;
+
+  uint256[] internal s_randomWords;
+  uint256 public s_requestId;
+  address s_owner;
+  uint8 public answer;
+  modifier onlyOwner() {
+    require(msg.sender == s_owner);
+    _;
+  }
+
+  constructor(uint64 subscriptionId) VRFConsumerBaseV2(vrfCoordinator) {
+    COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);
+    s_owner = msg.sender;
+    s_subscriptionId = subscriptionId;
+  }
+
+  //   랜덤값을 요청하는 함수
+  function requestRandomWords() internal returns (uint256) {
+    //   COORDINATOR.requestRandomWords함수를 호출 시 request ID 값을 얻게된다.
+    s_requestId = COORDINATOR.requestRandomWords(
+      keyHash,
+      s_subscriptionId,
+      requestConfirmations,
+      callbackGasLimit,
+      numWords
+    );
+  }
+
+  //    COORDINATOR가 fulfillRandomWords함수를 호출하며 생성된 랜덤값들을 사용자에게 보내준다. -> 외부에 믿을 수 있는 랜덤함수를 통해서 랜덤값을 생성해서 스마트컨트랙트에 입력해주는 방식
+  function fulfillRandomWords(uint256, uint256[] memory randomWords)
+    internal
+    override
+  {
+    // 사용자는 randomWords 값을 가지고 이용한다.
+    s_randomWords = randomWords;
+    answer = uint8(s_randomWords[0] % 10);
+  }
+
+  function makeAnswer() public onlyOwner returns (uint256) {
+    requestRandomWords();
+  }
+
+  function roll(uint256 dice_number) public payable {
+    if (dice_number == answer) {
+      winner = msg.sender;
+    }
+  }
+
+  function getWinner() public view returns (address) {
+    return winner;
+  }
+}

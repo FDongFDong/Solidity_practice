@@ -48,7 +48,7 @@
     - [Transfer](#transfer)
     - [NFT를 발행하는 방식](#nft를-발행하는-방식)
   - [Upgradable Contract](#upgradable-contract)
-    - [Upgradable Contract 코드 작성하며 이해하기](#Upgradable-Contract-코드-작성하며-이해하기)  
+    - [Upgradable Contract 코드 작성하며 이해하기](#upgradable-contract-코드-작성하며-이해하기)
     - [Openzeppelin으로 구현한 UUPSUpgrdeable](#openzeppelin으로-구현한-uupsupgrdeable)
   - [외부 컨트랙트 함수 호출하기](#외부-컨트랙트-함수-호출하기)
   - [Offchain Data 가져오기](#offchain-data-가져오기)
@@ -481,7 +481,9 @@ delegate call : 외부 컨트랙트 함수를 호출할 때 가져와서 처리�
 ---
 
 ## Upgradable Contract
+
 ### Upgradable Contract 코드 작성하며 이해하기
+
 [Proxy.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/Proxy.sol)
 
 [ImplementV1.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/ImplementV1.sol)
@@ -542,3 +544,8 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
   - ex. random한 값
 
 ### Chainlink - External Data
+
+- 위 방법 보다 조금 더 안정적인 방법을 ChainLink에서 제공하고 있다.
+
+[get a Random Number](https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/)
+[consumer 등록]()
