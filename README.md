@@ -564,3 +564,6 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 - chainlink의 AggregatorV3Interface을 이용하여 가져온다.
 - 거래소의 평균값을 사용자에게 전달해준다.
 - getLatesPrice() : priceFeed에 설정되어 있는 주소로 가서 저장되어 있는 실제 가격정보를 가져온다.
+![image](https://user-images.githubusercontent.com/20445415/198946900-1aa656bd-3953-4716-af88-0ca83d5c1f7a.png)
+
+- ![Uploading image.png…]()
