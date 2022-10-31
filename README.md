@@ -546,9 +546,21 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 ### Chainlink - External Data
 
+**Random Number 가져오기**
+
 - 위 방법 보다 조금 더 안정적인 방법을 ChainLink에서 제공하고 있다.
 
-[get a Random Number](https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/)
+[chainlink docs](https://docs.chain.link/docs/vrf/v2/subscription/examples/get-a-random-number/)
+
 [consumer 등록](https://vrf.chain.link/goerli/new)
 ![image](https://user-images.githubusercontent.com/20445415/198930004-46cc912f-2d07-4ab5-94f6-37df4a5357b3.png)
 
+- Attack 컨트랙트가 체인링크에 새로운 랜덤값을 호출하기 때문에 동일한 값을 찾을 수 없어 공격이 실패하는것을 확인할 수 있다.
+
+---
+
+**외부에서 이더리움 시세 요청하기**
+
+- chainlink의 AggregatorV3Interface을 이용하여 가져온다.
+- 거래소의 평균값을 사용자에게 전달해준다.
+- getLatesPrice() : priceFeed에 설정되어 있는 주소로 가서 저장되어 있는 실제 가격정보를 가져온다.

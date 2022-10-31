@@ -71,3 +71,16 @@ contract Dice is VRFConsumerBaseV2 {
     return winner;
   }
 }
+
+contract DiceAttack {
+  function attack(address _address) public payable {
+    // 이곳에서는 answer값을 구할 방법이 없다.
+    // EOA가 아닌 컨트랙트로 호출
+    IDice(_address).roll(answer);
+  }
+
+  // 위너가 되었을 때 출금하기 위함
+  function withdraw(address payable _to) public {
+    _to.transfer(address(this).balance);
+  }
+}
