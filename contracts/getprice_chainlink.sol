@@ -9,7 +9,7 @@ contract PriceConsumerV3 {
   /**
    * Network: goerli
    * Aggregaotr: BTC/USD
-   * address:
+   * address: 0xA39434A63A52E749F02807ae27335515BA4b07F7
    **/
 
   constructor() {

@@ -54,6 +54,9 @@
   - [Offchain Data 가져오기](#offchain-data-가져오기)
     - [외부 데이터를 가져와야 하는 이유](#외부-데이터를-가져와야-하는-이유)
     - [Chainlink - External Data](#chainlink---external-data)
+      - [Random Number 가져오기](#random-number-가져오기)
+      - [chainlink를 통해 시세 요청하기](#chainlink를-통해-시세-요청하기)
+      - [chainlink를 통해 TVL 조회하기](#chainlink를-통해-tvl-조회하기)
 
 ---
 
@@ -548,9 +551,11 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 > 위 코드로 인하여 문제점을 파악할 수 있음
 
+---
+
 ### Chainlink - External Data
 
-**Random Number 가져오기**
+#### Random Number 가져오기
 
 > Source Code : [random_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/random_chainlink.sol)
 
@@ -563,9 +568,7 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 
 - Attack 컨트랙트가 체인링크에 새로운 랜덤값을 호출하기 때문에 동일한 값을 찾을 수 없어 공격이 실패하는것을 확인할 수 있다.
 
----
-
-**외부에서 이더리움 시세 요청하기**
+#### chainlink를 통해 시세 요청하기
 
 > Source Code : [getprice_chainlink.sol](https://github.com/FDongFDong/solidity_practice/blob/main/contracts/getprice_chainlink.sol)
 
@@ -573,3 +576,11 @@ Proxy 컨트랙트와 변수를 1증가 시킬 수 있는 IncrementationV1, 변�
 - 거래소의 평균값을 사용자에게 전달해준다.
 - getLatesPrice() : priceFeed에 설정되어 있는 주소로 가서 저장되어 있는 실제 가격정보를 가져온다.
   ![image](https://user-images.githubusercontent.com/20445415/198946900-1aa656bd-3953-4716-af88-0ca83d5c1f7a.png)
+
+#### chainlink를 통해 TVL 조회하기
+
+> Source Code : [getTvl_chainlink.sol]()
+
+---
+
+---
